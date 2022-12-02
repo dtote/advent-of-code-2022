@@ -29,8 +29,23 @@ const FILE_NAME = "input.txt";
 const reader = Reader.create(FILE_PATH, FILE_NAME);
 const allCaloriesList: string = reader.run();
 
+// Part 1
 const eachElfCalories: string[] = separateElfCalories(allCaloriesList);
 const eachElfTotalCalories: number[] = allElfsTotalCalories(eachElfCalories);
 const elfWithMaxCalories = Math.max(...eachElfTotalCalories);
-
 console.log(elfWithMaxCalories);
+
+// Part 2
+
+function orderDesc(calories: number[]) {
+  return calories.sort((a, b) => b - a);
+}
+
+const eachElfTotalCaloriesDescOrdered = orderDesc(eachElfTotalCalories);
+const topThreeElfsWithMostCalories = eachElfTotalCaloriesDescOrdered.slice(
+  0,
+  3
+);
+const topThreeElfsTotalCalories = caloriesTotal(topThreeElfsWithMostCalories);
+
+console.log(topThreeElfsTotalCalories);

@@ -25,7 +25,16 @@ const FILE_PATH = path_1.default.resolve(__dirname, "..", "..", "day-01");
 const FILE_NAME = "input.txt";
 const reader = reader_1.Reader.create(FILE_PATH, FILE_NAME);
 const allCaloriesList = reader.run();
+// Part 1
 const eachElfCalories = separateElfCalories(allCaloriesList);
 const eachElfTotalCalories = allElfsTotalCalories(eachElfCalories);
 const elfWithMaxCalories = Math.max(...eachElfTotalCalories);
 console.log(elfWithMaxCalories);
+// Part 2
+function orderDesc(calories) {
+    return calories.sort((a, b) => b - a);
+}
+const eachElfTotalCaloriesDescOrdered = orderDesc(eachElfTotalCalories);
+const topThreeElfsWithMostCalories = eachElfTotalCaloriesDescOrdered.slice(0, 3);
+const topThreeElfsTotalCalories = caloriesTotal(topThreeElfsWithMostCalories);
+console.log(topThreeElfsTotalCalories);
