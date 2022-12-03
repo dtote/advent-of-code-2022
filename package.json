@@ -12,7 +12,9 @@
   },
   "scripts": {
     "start": "tsc-watch --onSuccess",
-    "start:day_01": "npm run start \"node ./dist/day-01/index.js\""
+    "start:day_01": "npm run start \"node ./dist/day-01/index.js\"",
+    "start:day_02_1": "npm run start \"node ./dist/day-02/part-1.js\"",
+    "start:day_02_2": "npm run start \"node ./dist/day-02/part-2.js\""
   },
   "repository": {
     "type": "git",
