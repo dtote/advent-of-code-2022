@@ -1,4 +1,3 @@
-import { ItemPriorities } from "../dist/day-03/item-priorities";
 import path from "path";
 import { Reader } from "../shared/reader";
 
