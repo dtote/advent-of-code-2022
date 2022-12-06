@@ -18,7 +18,9 @@
     "start:day_03_1": "npm run start \"node ./dist/day-03/part-1.js\"",
     "start:day_03_2": "npm run start \"node ./dist/day-03/part-2.js\"",
     "start:day_04_1": "npm run start \"node ./dist/day-04/part-1.js\"",
-    "start:day_04_2": "npm run start \"node ./dist/day-04/part-2.js\""
+    "start:day_04_2": "npm run start \"node ./dist/day-04/part-2.js\"",
+    "start:day_05_1": "npm run start \"node ./dist/day-05/part-1.js\"",
+    "start:day_05_2": "npm run start \"node ./dist/day-05/part-2.js\""
   },
   "repository": {
     "type": "git",
